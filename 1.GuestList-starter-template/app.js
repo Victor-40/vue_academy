@@ -30,5 +30,13 @@ new Vue({
         sortNames: function() {
             return this.guestName.sort();
         }
+    },
+    filters: {
+        toUpper: function(value) {
+            return value.toUpperCase();
+        },
+        formatName: function(value) {
+            console.log(value);
+        }
     }
 });
