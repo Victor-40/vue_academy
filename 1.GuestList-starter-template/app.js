@@ -9,7 +9,6 @@ new Vue({
         },
         newNameText: '',
         guestName: [],
-        formSubmitClass: '',
         appStyles: {
             marginTop: '25px'
         }
