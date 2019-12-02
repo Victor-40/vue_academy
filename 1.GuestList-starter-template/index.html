@@ -13,16 +13,28 @@
 </head>
 <body>
 
-  <div id="app">
-    <div class="container">
-
-      <div class="row" v-bind:style='appStyles'>
+  <div class="container">
+    <div id="navigation">
+      <div class="row" >
         <div class="col-sm-12 text-center">
-          <h1>Guest List</h1>
+          <h1>{{ appName }}</h1>
+          <hr>
+        </div>
+        <div>
+          <ul class="nav">
+            <div v-for="navLink in navLinks" :key="navLink.id">
+              <li class="nav-item"><a class="nav-link" :href="navLink.url" >{{ navLink.name }}</a></li>
+
+            </div>  
+          </ul>
         </div>
       </div>
+      <hr>
 
-      <div class="row" v-bind:style='appStyles'>
+    </div>
+  <div id="app">
+
+      <div class="row" >
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header" >
@@ -43,7 +55,7 @@
         </div>
       </div>
 
-      <div class="row" v-bind:style='appStyles'>
+      <div class="row" >
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">

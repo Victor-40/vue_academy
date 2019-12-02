@@ -9,9 +9,7 @@ new Vue({
         },
         newNameText: '',
         guestName: [],
-        appStyles: {
-            marginTop: '25px'
-        },
+       
         eventCapacity: 25,
         eventCapacityPercentage: 0
         
@@ -40,3 +38,16 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: "#navigation",
+    data: {
+        appName: 'Guest List',
+        navLinks: [
+            {name: 'Home', id: 1, url: "https://google.com"},
+            {name: 'Upcoming events', id: 2, url: "https://yandex.ru"},
+            {name: 'Guest Benefits', id: 3, url: "https://mail.ru"},
+            {name: 'Latest News', id: 4, url: "https://ixbt.com"}
+        ]
+    }
+})
