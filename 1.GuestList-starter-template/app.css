@@ -1,0 +1,13 @@
+.row {
+  
+}
+
+.name-box {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.submitted {
+  background-color: fuchsia;
+}
