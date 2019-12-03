@@ -57,3 +57,8 @@ var vm2 = new Vue({
     }
 });
 
+var vm3 = new Vue({
+    template: '<div class="col-sm-12 text-center"><h1>Guest List</h1></div>'
+});
+
+vm3.$mount('#navigation');
